@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*/////////////// CONTAINER GENERAL ////////////////*/
+.container_general {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+/*//////////////////////////////////////////////////*/
+
+
+/*------------- STYLE CONTAINER BANNERS -------------*/
+.container_banners {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    position: relative;
+    top: 40px;
+}
+
+.container_banners > div {
+    margin: 0 0 0 208px;
+}
+
+.container_banners > .container_banner-2, .container_banners > .container_banner-3 {
+    margin: 0 0 0 115px; 
+}
+
+.container_banner-1:hover, .container_banner-2:hover, .container_banner-3:hover {
+    cursor: pointer;
+}
+
+/*---------------------------------------------------*/
+
+/*********** STYLE CONTAINER PRODUCTOS ***********/
+.container_productos {
+    width: 100%;
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 20px;
+}
+
+.style_font-text {
+    font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+}
+
+.container_productos > h2 {
+    background: #fce233;
+    width: 600px;
+    height: 48px;
+    font-size: 21px;
+    font-weight: 100;
+    line-height: 2.2;
+    text-align: center;
+    position: relative;
+    top: 165px;
+    left: 665px;
+}
+
+.style_span {
+    font-weight: 600;
+}
+
+.style_imagen-fija {
+    width: 280px;
+    height: 380px;
+    position: relative;
+    top: 50px;
+    left: 29px;
+}
+
+.segundo_container{
+    width: 80%;
+    height: 470px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 178px;
+    top: 95px;
+}
+
+/*----------- STYLE CARROUSEL ------------*/
+
+#carrusel {
+    float: left;
+    width: 840px;
+    overflow: hidden;
+    height: 425px;
+    position: relative;
+    left: 175px;
+    top: 70px;
+}
+ 
+.left-arrow {
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+    top: 35%;
+}
+ 
+.right-arrow {
+    position: absolute;
+    right: 2px;
+    z-index: 1;
+    top: 35%;
+}
+
+.style_left-arrow, .style_right-arrow {
+    background: #fff;
+    padding: 4px;
+    border-radius: 50px;
+    box-shadow: 1.5px 1px 1.5px rgb(141, 140, 140);
+    color: black;
+}
+
+.style_left-arrow:hover, .style_right-arrow:hover {
+    background: rgb(223, 218, 218);
+}
+ 
+.carrusel {
+    width: 3000px;
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    z-index: 0;
+    padding-left: 14px;
+}
+ 
+.carrusel > div {
+    width: 155px;
+    height: 425px;
+    margin: 0 0 0 55.7px;
+    float: left;
+    text-align: center;
+    position: relative;
+    right: -42px;
+    bottom: 15px;
+}
+ 
+.style_img-destacado {
+    width: 87px;
+    height: 32px;
+    position: relative;
+    right: 25px;
+    top: 5px;
+    z-index: 1;
+}
+
+.style-image {
+    width: 155px;
+    height: 170px;
+    position: relative;
+    right: 30px;
+}
+
+.carrusel img {
+    cursor: pointer;
+    position: relative;
+    bottom: 25px;
+}
+
+.style-h5 {
+    width: 200px;
+    font-size: 13.7px;
+    font-weight: 100;
+    line-height: 1.2;
+    white-space: normal;
+    position: relative;
+    right: 45px;
+}
+
+.style_text_primer-precio {
+    font-size: 21px;
+    font-weight: 500;
+    position: relative;
+    right: 20px;
+    top: 5px;
+}
+
+.style_text_primer-precio > span {
+    font-size: 12px;
+    font-weight: 100;
+}
+.style_text_segundo-precio {
+    font-size: 13px;
+    font-weight: 100;
+    text-align: start;
+    color: rgb(145, 143, 143);
+    position: relative;
+    top: 8px;
+}
+/*----------------------------------------*/
+
+/*///// STYLE BUTTON AGREGAR AL PRESUPUESTO /////*/
+.container_button_cant-presupuesto, .style_cantidad, .style_agregarAlPresupuesto {
+    display: none;
+}
+
+.product:hover .container_button_cant-presupuesto {
+    display: block;
+    width: 150px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 25px;
+    right: 13px;
+    cursor: pointer;
+}
+
+.text_cant {
+    font-size: 15px;
+    font-weight: 600;
+    position: relative;
+    left: 75px;
+}
+
+.product:hover .style_cantidad {
+    display: block;
+    width: 135px;
+    height: 35px;
+    border-radius: 4px;
+    position: relative;
+    left: 4px;
+    padding-right: 77px;
+    font-size: 12px;
+    color: rgb(59, 59, 59);
+    border: 1px solid rgb(202, 201, 201);
+    cursor: pointer;
+}
+
+.product:hover .style_agregarAlPresupuesto {
+    display: block;
+    width: 145px;
+    height: 35px;
+    background: #ff211a;
+    color: #fff;
+    font-size: 11px;
+    line-height: 1.25;
+    position: relative;
+    top: 8px;
+    border: 0px;
+    cursor: pointer;
+}
+/*///////////////////////////////////////////////*/
+
+/*************************************************/
